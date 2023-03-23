@@ -77,6 +77,26 @@
   <div v-else class="alert alert-error shadow-lg">
     <p class="text-white">No Data Found</p>
   </div> -->
+
+  <!-- lifecycle hooks -->
+  <!-- <div className="overflow-x-auto">
+    <table className="table table-zebra w-full">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Product</th>
+          <th>Prices</th>
+        </tr>
+      </thead>
+      <tbody v-for="item in products" key="item.id">
+        <tr>
+          <th>{{ item.id }}</th>
+          <td>{{ item.title }}</td>
+          <td>{{ item.prices }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
 </template>
 
 <!-- data & method -->
@@ -146,6 +166,36 @@ export default {
     return {
       products: [],
     };
+  },
+};
+</script> -->
+
+<!--lifecycle hooks -->
+<!-- <script>
+export default {
+  name: "App",
+  data() {
+    return {
+      products: [],
+    };
+  },
+  beforeCreate() {
+    console.log("Before Create");
+  },
+  created() {
+    this.products = [
+      { id: 1, title: "Product 1", prices: 10000 },
+      { id: 2, title: "Product 2", prices: 15000 },
+      { id: 3, title: "Product 3", prices: 20000 },
+      { id: 4, title: "Product 4", prices: 25000 },
+      { id: 5, title: "Product 5", prices: 30000 },
+    ];
+  },
+  beforeMount() {
+    console.log("Before Mount");
+  },
+  mounted() {
+    console.log("Mounted");
   },
 };
 </script> -->
