@@ -12,10 +12,25 @@
   </div> -->
 
   <!-- data binding -->
-  <div class="flex justify-center">
+  <!-- <div class="flex justify-center">
     <button class="btn btn-info btn-sm text-white rounded">
       <a :href="url">Go To My Website</a>
     </button>
+  </div> -->
+
+  <!-- two ways data binding -->
+  <div class="flex justify-center">
+    <input
+      v-model="nama"
+      type="text"
+      placeholder="Type here"
+      className="input input-bordered input-info w-full max-w-xs"
+    />
+    <div class="flex items-center mx-2">
+      <p class="text-lg text-red-700">
+        {{ nama }}
+      </p>
+    </div>
   </div>
 </template>
 
@@ -37,12 +52,24 @@ export default {
 </script> -->
 
 <!-- data binding -->
-<script>
+<!-- <script>
 export default {
   name: "App",
   data() {
     return {
       url: "https://radenmasabdul.my.id",
+    };
+  },
+};
+</script> -->
+
+<!-- two ways data binding -->
+<script>
+export default {
+  name: "App",
+  data() {
+    return {
+      nama: "",
     };
   },
 };
