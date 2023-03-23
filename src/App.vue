@@ -19,7 +19,7 @@
   </div> -->
 
   <!-- two ways data binding -->
-  <div class="flex justify-center">
+  <!-- <div class="flex justify-center">
     <input
       v-model="nama"
       type="text"
@@ -31,7 +31,52 @@
         {{ nama }}
       </p>
     </div>
+  </div> -->
+
+  <!--loops -->
+  <!-- <div className="overflow-x-auto">
+    <table className="table table-zebra w-full">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Product</th>
+          <th>Prices</th>
+        </tr>
+      </thead>
+      <tbody v-for="item in products" key="item.id">
+        <tr>
+          <th>{{ item.id }}</th>
+          <td>{{ item.title }}</td>
+          <td>{{ item.prices }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+
+  <!-- conditional -->
+  <!-- <div v-if="products.length">
+    <div className="overflow-x-auto">
+      <table className="table table-zebra w-full">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Product</th>
+            <th>Prices</th>
+          </tr>
+        </thead>
+        <tbody v-for="item in products" key="item.id">
+          <tr>
+            <th>{{ item.id }}</th>
+            <td>{{ item.title }}</td>
+            <td>{{ item.prices }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
+  <div v-else class="alert alert-error shadow-lg">
+    <p class="text-white">No Data Found</p>
+  </div> -->
 </template>
 
 <!-- data & method -->
@@ -64,7 +109,7 @@ export default {
 </script> -->
 
 <!-- two ways data binding -->
-<script>
+<!-- <script>
 export default {
   name: "App",
   data() {
@@ -73,4 +118,34 @@ export default {
     };
   },
 };
-</script>
+</script> -->
+
+<!--loops -->
+<!-- <script>
+export default {
+  name: "App",
+  data() {
+    return {
+      products: [
+        { id: 1, title: "Product 1", prices: 10000 },
+        { id: 2, title: "Product 2", prices: 15000 },
+        { id: 3, title: "Product 3", prices: 20000 },
+        { id: 4, title: "Product 4", prices: 25000 },
+        { id: 5, title: "Product 5", prices: 30000 },
+      ],
+    };
+  },
+};
+</script> -->
+
+<!-- conditonal -->
+<!-- <script>
+export default {
+  name: "App",
+  data() {
+    return {
+      products: [],
+    };
+  },
+};
+</script> -->
