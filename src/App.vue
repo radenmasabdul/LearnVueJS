@@ -97,6 +97,34 @@
       </tbody>
     </table>
   </div> -->
+
+  <!-- computed properties -->
+  <!-- <div class="flex justify-center py-2">
+    <input
+      v-model="cari"
+      type="text"
+      placeholder="Search By Product Names"
+      className="input input-bordered input-info w-full max-w-xs"
+    />
+  </div>
+  <div className="overflow-x-auto">
+    <table className="table table-zebra w-full">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Product</th>
+          <th>Prices</th>
+        </tr>
+      </thead>
+      <tbody v-for="item in cariData" key="item.id">
+        <tr>
+          <th>{{ item.id }}</th>
+          <td>{{ item.title }}</td>
+          <td>{{ item.prices }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
 </template>
 
 <!-- data & method -->
@@ -196,6 +224,35 @@ export default {
   },
   mounted() {
     console.log("Mounted");
+  },
+};
+</script> -->
+
+<!-- computed properties -->
+<!-- <script>
+export default {
+  name: "App",
+  data() {
+    return {
+      cari: "",
+      products: [],
+    };
+  },
+  created() {
+    this.products = [
+      { id: 1, title: "Product 1", prices: 10000 },
+      { id: 2, title: "Product 2", prices: 15000 },
+      { id: 3, title: "Product 3", prices: 20000 },
+      { id: 4, title: "Product 4", prices: 25000 },
+      { id: 5, title: "Product 5", prices: 30000 },
+    ];
+  },
+  computed: {
+    cariData() {
+      return this.products.filter((item) => {
+        return item.title.match(this.cari);
+      });
+    },
   },
 };
 </script> -->
